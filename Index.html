@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Outsourceraa | Bridging Talent &amp; Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d6e3ff",
+                        "tertiary-fixed-dim": "#8bd1e8",
+                        "surface": "#f9f9ff",
+                        "primary-fixed-dim": "#aec7f5",
+                        "on-tertiary-container": "#4a91a6",
+                        "on-secondary-fixed-variant": "#004e59",
+                        "surface-container-low": "#f0f3ff",
+                        "secondary": "#006876",
+                        "on-surface-variant": "#44474e",
+                        "secondary-container": "#7de9fe",
+                        "surface-container": "#e7eeff",
+                        "on-tertiary-fixed": "#001f27",
+                        "outline": "#74777f",
+                        "background": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dee8ff",
+                        "inverse-surface": "#153156",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000a0f",
+                        "on-background": "#001b3c",
+                        "on-primary-fixed": "#001b3c",
+                        "on-primary-fixed-variant": "#2e476e",
+                        "primary-container": "#002045",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-primary": "#aec7f5",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "surface-dim": "#c8dbff",
+                        "surface-container-highest": "#d6e3ff",
+                        "tertiary-container": "#00242d",
+                        "tertiary-fixed": "#b2ebff",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#001b3c",
+                        "primary": "#00091b",
+                        "inverse-on-surface": "#ecf0ff",
+                        "secondary-fixed": "#a0efff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#006977",
+                        "outline-variant": "#c4c6cf",
+                        "on-primary-container": "#7089b3",
+                        "on-secondary-fixed": "#001f25",
+                        "surface-variant": "#d6e3ff",
+                        "surface-tint": "#465f87",
+                        "secondary-fixed-dim": "#68d5ea",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .hero-gradient { background: linear-gradient(135deg, #00091b 0%, #002045 100%); }
+        .tonal-layering { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar from Shared Components JSON -->
+<header class="sticky top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-900 dark:text-white">
+                Outsourceraa
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-teal-600 dark:text-teal-400 font-bold border-b-2 border-teal-600 font-manrope tracking-tight font-medium" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 font-manrope tracking-tight font-medium hover:bg-slate-50 transition-colors duration-200" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 font-manrope tracking-tight font-medium hover:bg-slate-50 transition-colors duration-200" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 font-manrope tracking-tight font-medium hover:bg-slate-50 transition-colors duration-200" href="#">Contact Us</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="px-5 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-900 scale-95 active:scale-90 transition-transform">Apply Now</button>
+<button class="px-6 py-2 bg-primary-container text-white rounded-lg font-bold scale-95 active:scale-90 transition-transform">Hire Talent</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="hero-gradient relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img alt="Modern professional office" class="w-full h-full object-cover" data-alt="A sophisticated high-end modern office interior with large windows, minimalist furniture, and soft cinematic blue and grey lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFs0_IBLPC08Js_jTrw80MOpHhAY0gpQTmQNafiRWAhxdt_o0yr6N5JjcYvEXa-QYB4UisP8IR4xXWdVEP7Gv3W_lxJFy2e9qrHAw-x-zTfjfimXJWMXzQidff3hSdFIf9CmU67MFA5t44CV2MxRlGJkIo_n6MFR9BDMNuDpetwC11llb4gsnZW4cJ8Z6ZEgWL7nncdSQgYRCS8YubGjy3q1QktBy4pp6h6Hosme-LDG8hjRFS7ht92y9C0DCF5w0aeXRcQR-VsT-a"/>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-20 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold tracking-widest uppercase">
+                        The Executive Curator of Talent
+                    </div>
+<h1 class="text-display-lg text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tighter">
+                        Bridging <span class="text-secondary-container">Talent</span> &amp; Excellence
+                    </h1>
+<p class="text-lg text-on-primary-container max-w-xl leading-relaxed">
+                        Outsourceraa transcends traditional recruitment. We curate elite human capital for visionary enterprises, ensuring seamless integration and superior performance.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-secondary text-white rounded-xl font-bold text-lg hover:bg-secondary-fixed-dim transition-all shadow-xl shadow-secondary/10">
+                            Partner With Us
+                        </button>
+<button class="px-8 py-4 bg-white/5 backdrop-blur-md border border-white/10 text-white rounded-xl font-bold text-lg hover:bg-white/10 transition-all">
+                            Explore Careers
+                        </button>
+</div>
+</div>
+<div class="hidden md:block relative">
+<div class="bg-surface-container-lowest/10 backdrop-blur-xl p-8 rounded-3xl border border-white/10">
+<img alt="Professional portrait" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A confident professional woman in executive attire smiling slightly in a bright, modern architectural setting with soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdtdO1jjvyiV7ZH0Cg7ou6H3gUerkafID0x7LyaxfjFEWPhJx7N7TO_AeJj7Sklv_QKA3r0U3Vj4CrmKJsyrwB1zf1ZpVWlvl5lfb3uR6N0z-cKQLlCLOHYyZmebwR9K_AmvQ_toj9VpuEkUcmmWOQEUGX2_1xMYkmnCJfnKKt7KOLn3QkJXR_MkMzGzB0he4E5P9qj14jz0rrRVTX8gXzF-JhhzV9N9IHkeymhd5H_Qh-2oBypEjn0sDBNZyUTVSEnWu-AP9UBcll"/>
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-6 rounded-2xl shadow-xl">
+<span class="block text-3xl font-black text-on-secondary-container">98%</span>
+<span class="text-xs font-bold text-on-secondary-container uppercase tracking-widest">Retention Rate</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By Section -->
+<section class="py-16 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8">
+<p class="text-center text-xs font-bold text-outline uppercase tracking-[0.3em] mb-10">Trusted by Industry Leaders</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all">
+<div class="text-2xl font-black text-primary-container italic">FORBES</div>
+<div class="text-2xl font-black text-primary-container">TECHLABS</div>
+<div class="text-2xl font-black text-primary-container">VENTURE</div>
+<div class="text-2xl font-black text-primary-container italic">GLOBALCO</div>
+<div class="text-2xl font-black text-primary-container">RECRUIT.AI</div>
+</div>
+</div>
+</section>
+<!-- Services Section: Bento Grid -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Our Curated Services</h2>
+<p class="text-on-surface-variant text-lg">Comprehensive operational excellence tailored for the modern enterprise.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Recruitment -->
+<div class="md:col-span-8 bg-surface-container-lowest p-10 rounded-3xl group hover:bg-primary-container transition-all duration-500 shadow-sm">
+<div class="flex flex-col h-full justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:text-secondary-container" data-icon="person_search">person_search</span>
+<h3 class="text-3xl font-bold mb-4 group-hover:text-white">Recruitment</h3>
+<p class="text-on-surface-variant group-hover:text-white/70 max-w-md">Precision-driven talent acquisition utilizing advanced psychometric mapping and industry-specific expertise.</p>
+</div>
+<div class="mt-12">
+<a class="text-secondary font-bold inline-flex items-center group-hover:text-white" href="#">
+                                    Learn More <span class="material-symbols-outlined ml-2" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Compliance -->
+<div class="md:col-span-4 bg-surface-container-high p-10 rounded-3xl">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="gavel">gavel</span>
+<h3 class="text-2xl font-bold mb-4 text-primary">Compliance</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Navigating global legal frameworks with 100% risk mitigation and jurisdictional precision.</p>
+</div>
+<!-- Payroll -->
+<div class="md:col-span-4 bg-secondary-container p-10 rounded-3xl">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-6" data-icon="payments">payments</span>
+<h3 class="text-2xl font-bold mb-4 text-on-secondary-container">Payroll</h3>
+<p class="text-on-secondary-container/80 text-sm leading-relaxed">Seamless global disbursement systems ensuring timely, accurate compensation across currencies.</p>
+</div>
+<!-- Resume Building -->
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-3xl border border-outline-variant/10">
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="description">description</span>
+<h3 class="text-2xl font-bold mb-4 text-primary">Resume Building</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Crafting high-impact professional narratives that command attention from top-tier recruiters and AI-driven screening systems.</p>
+</div>
+<div class="relative h-40 bg-white rounded-xl shadow-inner overflow-hidden border border-outline-variant/20">
+<div class="absolute inset-4 space-y-3">
+<div class="h-2 w-2/3 bg-surface-container-high rounded"></div>
+<div class="h-2 w-full bg-surface-container-high rounded"></div>
+<div class="h-2 w-1/2 bg-secondary/20 rounded"></div>
+<div class="h-2 w-3/4 bg-surface-container-high rounded"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Ecosystem Section -->
+<section class="py-24 bg-primary-container text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-px bg-white/10 rounded-3xl overflow-hidden border border-white/10">
+<!-- For Companies -->
+<div class="bg-primary-container p-16 hover:bg-primary transition-colors">
+<h2 class="text-4xl font-extrabold mb-6 tracking-tight">For Companies</h2>
+<p class="text-white/60 mb-10 text-lg leading-relaxed">Access a curated pipeline of world-class talent vetted for technical prowess and cultural alignment.</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span>Executive Search Specialists</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span>Rapid Team Scaling</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span>Fractional Leadership Solutions</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-white text-primary font-bold rounded-xl hover:bg-secondary-container transition-all">Hire Top Talent</button>
+</div>
+<!-- For Candidates -->
+<div class="bg-primary-container p-16 hover:bg-primary transition-colors">
+<h2 class="text-4xl font-extrabold mb-6 tracking-tight">For Candidates</h2>
+<p class="text-white/60 mb-10 text-lg leading-relaxed">Join an elite network and get matched with organizations that value your expertise and ambition.</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span>Exclusive Career Coaching</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span>Direct Top-Tier Placements</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle" data-weight="fill">check_circle</span>
+<span>Personal Branding Workshops</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-secondary text-white font-bold rounded-xl hover:bg-secondary-container hover:text-primary-container transition-all">Join Our Network</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+<h2 class="text-4xl md:text-6xl font-extrabold text-primary mb-8 tracking-tighter">Ready for a Transformation?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                    Whether you're scaling a global enterprise or elevating your professional trajectory, Outsourceraa is your strategic partner.
+                </p>
+<div class="inline-flex p-2 bg-surface-container-low rounded-2xl border border-outline-variant/20">
+<input class="bg-transparent border-none focus:ring-0 px-6 py-3 w-64 md:w-80" placeholder="Enter your work email" type="email"/>
+<button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-secondary transition-all">Get Started</button>
+</div>
+<div class="mt-12 flex justify-center gap-8 opacity-60">
+<div class="text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+                        ISO Certified
+                    </div>
+<div class="text-sm font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="security">security</span>
+                        GDPR Compliant
+                    </div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+</main>
+<!-- Footer from Shared Components JSON -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-blue-900 dark:text-white mb-4">Outsourceraa</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed mb-6">
+                    Curating elite talent for the digital era. Building excellence, one hire at a time.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-50">Resources</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 underline decoration-2 transition-opacity opacity-80 hover:opacity-100 text-sm" href="#">Newsletter Signup</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 underline decoration-2 transition-opacity opacity-80 hover:opacity-100 text-sm" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-50">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 underline decoration-2 transition-opacity opacity-80 hover:opacity-100 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 underline decoration-2 transition-opacity opacity-80 hover:opacity-100 text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 underline decoration-2 transition-opacity opacity-80 hover:opacity-100 text-sm" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-50">Newsletter</h4>
+<p class="text-sm text-slate-500">Subscribe for executive insights.</p>
+<div class="flex">
+<input class="w-full bg-white dark:bg-slate-800 border-none rounded-l-lg text-sm px-4" placeholder="Email" type="text"/>
+<button class="bg-teal-600 text-white px-4 py-2 rounded-r-lg">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 py-8 px-8 text-center">
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed">
+                © 2024 Outsourceraa. The Executive Curator of Talent.
+            </p>
+</div>
+</footer>
+</body></html>
